@@ -1,0 +1,17 @@
+def WordLength(s):
+    s = s.strip()
+    count = 0
+    for i in range(len(s) - 1, -1, -1):
+        if s[i] == ' ':
+            break
+        count += 1
+
+    return count
+
+
+#
+#
+# print(WordLength("   fly me   to   the moon  "))
+print(WordLength("Hello World"))
+# print(WordLength("a"))
+# print(WordLength("    day"))
